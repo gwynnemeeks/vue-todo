@@ -1,13 +1,19 @@
 <template>
   <div>
     <h2>{{ todo.name }}</h2>
-    <button>Mark Completed</button>
+    <button @click="handleClick">Mark Completed</button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["todo"]
+  props: ["todo"],
+
+  methods: {
+    handleClick() {
+      this.$emit("status-change", this.todo);
+    }
+  }
 };
 </script>
 
