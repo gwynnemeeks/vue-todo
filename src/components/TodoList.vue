@@ -13,17 +13,18 @@ import TodoItem from "./TodoItem.vue";
 
 export default {
   components: { TodoItem },
+  data() {
+    return {
+      todos: [...todoItems]
+    };
+  },
   methods: {
     handleStatusChange(item) {
       item.complete = !item.complete;
       console.log(item);
     }
   },
-  data() {
-    return {
-      todos: [...todoItems]
-    };
-  }
+  computed: {}
 };
 </script>
 
