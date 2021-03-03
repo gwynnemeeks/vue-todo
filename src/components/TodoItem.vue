@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 div {
   border: 3px solid tomato;
   margin: 15px;
