@@ -5,7 +5,15 @@
 </template>
 
 <script>
-export default {};
+import { todoItems } from "../data";
+
+export default {
+  data() {
+    return {
+      todos: [...todoItems]
+    };
+  }
+};
 </script>
 
 <style></style>
