@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 div {
-  border: 3px solid tomato;
+  border: 3px solid orchid;
   margin: 15px;
   padding: 10px;
 }
