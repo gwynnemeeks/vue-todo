@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>{{ todo.name }}</h2>
+    <button>Mark Completed</button>
   </div>
 </template>
 
